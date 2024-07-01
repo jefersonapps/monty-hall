@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jeferson Leite" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="shortcut icon" href="assets/favicon.jpg" type="image/x-icon" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1"></script>
+
+    <title>Simulador de Monty Hall</title>
+  </head>
+
+  <body>
+    <header>
+      <div id="logo" class="flex gap">
+        <img src="/assets/logo.webp" alt="Logotipo Simulador de Monty Hall" />
+        <h1>Simulador de Monty Hall</h1>
+      </div>
+      <a
+        href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?metodo=apresentar&id=K9602447P6"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K9602447P6"
+          alt="Jeferson Leite"
+        />
+      </a>
+    </header>
+
+    <div class="card" style="margin-bottom: 0; margin-inline: 10px">
+      <label for="num-of-simulations">Nº de simulações: &nbsp;&nbsp;</label>
+      <input
+        type="number"
+        min="1"
+        max="1000"
+        id="num-of-simulations"
+        name="num-of-simulations"
+      />
+
+      <label for="switch-door" class="m-horizontal"
+        >Trocar de porta? &nbsp;&nbsp;
+
+        <label class="switch">
+          <input
+            type="checkbox"
+            id="switch-door"
+            name="switch-door"
+            value="true"
+          />
+          <span class="slider round"></span>
+        </label>
+      </label>
+
+      <label for="compare" class="m-horizontal"
+        >Comparar? &nbsp;&nbsp;
+
+        <label class="switch">
+          <input type="checkbox" id="compare" name="compare" value="true" />
+          <span class="slider round"></span>
+        </label>
+      </label>
+
+      <label for="animation" class="m-horizontal"
+        >Animação? &nbsp;&nbsp;
+
+        <label class="switch">
+          <input type="checkbox" id="animation" name="animation" value="true" />
+          <span class="slider round"></span>
+        </label>
+      </label>
+
+      <button
+        id="run-simulator-btn"
+        class="bg-blue-500 hover-bg-blue-700 text-white font-bold py-2 px-4 rounded"
+      >
+        Simular
+      </button>
+    </div>
+
+    <div class="flex gap" id="summary_container">
+      <div
+        class="card"
+        style="margin-left: 10px; border-top: 6px solid #ffffff"
+      >
+        Simulação: <span id="simulations_number">0</span>
+      </div>
+
+      <div class="card" style="border-top: 6px solid #22c55e">
+        Vitórias: <span id="wins_number" style="color: #22c55e">0</span>
+      </div>
+      <div
+        class="card"
+        style="margin-right: 10px; border-top: 6px solid #e11d48"
+      >
+        Derrotas: <span id="losses_number" style="color: #e11d48">0</span>
+      </div>
+    </div>
+
+    <script src="index.js" defer></script>
+  </body>
+</html>
