@@ -3,7 +3,7 @@
 Este projeto é um simulador interativo do famoso problema de probabilidade, o Problema de Monty Hall. Ele permite que você visualize e entenda melhor este problema controverso.
 
 <p align="center">
-  <img src="./assets/logo.webp" alt="ícone do portfólio" width="100"/>
+  <img src="./assets/favicon.png" alt="Ícone do aplicativo - A imagem mostra três portas, uma vermelha e duas azuis, ilustrando o problema de Monty Hall" width="100"/>
 </p>
 
 ## O Problema de Monty Hall
